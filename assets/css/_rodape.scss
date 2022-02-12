@@ -1,0 +1,98 @@
+.rodape {
+    .divisao-rodape {
+        @include display-flex(true, false, true);
+        margin: 3.5rem 0 0 0;
+
+        .divisao-logo-linguagem {
+            .logo {
+                .texto {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                }
+
+                .linha {
+                    width: 4rem;
+                    height: 0.35rem;
+                    border-radius: 1rem;
+                    background: var(--tema-verde);
+                }
+            }
+
+            .divisao-linguagens {
+                margin: 1rem 0 0 0;
+
+                .titulo {
+                    color: var(--texto-secundario);
+                    font-weight: 500;
+                    font-size: 0.95rem;
+                    margin: 0 0 0.45rem 0;
+                }
+
+                .linguagem-utilizadas {
+                    display: flex;
+
+                    .linguagem {
+                        @include linguagem-utilizada();
+                        margin: 0 0.5rem 0 0;
+                    }
+                    .html {
+                        background: map-get($linguagens, html);
+                    }
+
+                    .css {
+                        background: map-get($linguagens, css);
+                    }
+
+                    .sass {
+                        background: map-get($linguagens, sass);
+                    }
+
+                    .javascript {
+                        background: map-get($linguagens, javascript-escura);
+                    }
+
+                    .python {
+                        background: map-get($linguagens, python);
+                    }
+                }
+            }
+        }
+
+        .divisao-direita {
+            .titulo {
+                color: var(--texto-primario);
+                font-weight: bold;
+                font-size: 1.35rem;
+            }
+
+            .links {
+                .rede-social {
+                    color: var(--texto-secundario);
+                    font-size: 1.45rem;
+                    margin: 0.45rem 0.35rem 0 0;
+                }
+            }
+        }
+    }
+
+    .copyright {
+        color: var(--texto-secundario);
+        font-weight: bold;
+        font-size: 0.85rem;
+        text-align: center;
+        margin: 3.5rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .rodape {
+        .divisao-rodape {
+            .divisao-logo-linguagem {
+                margin: 0 0 2.5rem 0;
+            }
+            .divisao-direita {
+                text-align: center;
+            }
+        }
+    }
+}

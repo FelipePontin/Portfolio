@@ -1,0 +1,96 @@
+.habilidades {
+    background: var(--background-secundario);
+    padding: 4.5rem 0 5rem 0;
+
+    .divisao-texto {
+        text-align: center;
+
+        .titulo {
+            font-weight: bold;
+            font-size: 1.95rem;
+        }
+
+        .subtitulo {
+            color: var(--texto-secundario);
+            margin: -0.5rem 0 0 0;
+        }
+    }
+
+    .divisao-linguagem {
+        @include display-flex(true, true, true);
+        margin: 3rem 0 0 0;
+
+        .card {
+            background: var(--background-primario);
+            border-radius: 0.5rem;
+            margin: 1rem;
+            padding: 1.5rem 1rem 1rem 1rem;
+            text-align: center;
+            width: 11rem;
+            height: auto;
+
+            .icone-linguagem {
+                font-size: 6rem;
+                border: none;
+            }
+
+            .nome {
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: var(--texto-primario);
+            }
+
+            .botao-linguagem {
+                background: transparent;
+                border: none;
+                margin: 3rem 0 0.5rem 0;
+                cursor: pointer;
+                width: 100%;
+            }
+
+            .seta-linguagem {
+                color: var(--background-secundario);
+                font-size: 1.5rem;
+            }
+
+            .resumo {
+                color: var(--texto-secundario);
+                font-weight: 500;
+                font-size: 0.92rem;
+                overflow: hidden;
+                opacity: 0;
+                max-height: 0;
+                transition: 0.5s;
+            }
+
+            .resumo.resumoOpen {
+                opacity: 1;
+                max-height: 200px;
+            }
+        }
+        .html {
+            border: 1px solid map-get($linguagens, html);
+            color: map-get($linguagens, html);
+        }
+
+        .css {
+            border: 1px solid map-get($linguagens, css);
+            color: map-get($linguagens, css);
+        }
+
+        .sass {
+            border: 1px solid map-get($linguagens, sass);
+            color: map-get($linguagens, sass);
+        }
+
+        .javascript {
+            border: 1px solid map-get($linguagens, javascript);
+            color: map-get($linguagens, javascript);
+        }
+
+        .python {
+            border: 1px solid map-get($linguagens, python);
+            color: map-get($linguagens, python);
+        }
+    }
+}
