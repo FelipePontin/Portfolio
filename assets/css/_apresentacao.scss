@@ -1,6 +1,6 @@
 .apresentacao {
     @include display-flex(true, false, false);
-    margin: 5rem;
+    margin: 5rem 0 7.5rem 0;
 
     .divisao-texto {
         @include display-flex(false, false, false);
