@@ -20,6 +20,7 @@
         }
 
         .divisao-apresentacao {
+
             .nome {
                 background: var(--gradient);
                 border-radius: 0.5rem;
@@ -90,7 +91,7 @@
     .apresentacao {
         margin: 7rem 4rem 4rem 4rem;
 
-        .divisao-texto	{
+        .divisao-texto {
             @include display-flex(true, false, false);
             flex-direction: column-reverse;
 
@@ -111,7 +112,6 @@
                 .descricao {
                     width: 100%;
                 }
-
             }
         }
     }
