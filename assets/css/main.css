@@ -34,6 +34,16 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 7.5px;
+  background: #28282986;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--tema-verde);
+  border-radius: 1rem;
+}
+
 .seta-fixada {
   cursor: pointer;
   color: var(--texto-primario);
@@ -67,6 +77,10 @@ body {
 .icone-menu {
   color: var(--texto-primario);
   font-size: 2rem;
+}
+
+.esconder {
+  display: none;
 }
 
 @media screen and (max-width: 775px) {
@@ -488,6 +502,55 @@ body {
   margin: -0.5rem 0 0 0;
 }
 
+.projetos .divisao-input {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.projetos .divisao-input .input-filtro {
+  background: var(--background-secundario);
+  border: none;
+  border-radius: 0.25rem;
+  color: var(--texto-primario);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  padding: 0 0 0 0.5rem;
+  width: 20rem;
+  height: 2.5rem;
+  outline: none;
+}
+
+.projetos .divisao-input ::-webkit-input-placeholder {
+  color: var(--texto-secundario);
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.projetos .divisao-input :-ms-input-placeholder {
+  color: var(--texto-secundario);
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.projetos .divisao-input ::-ms-input-placeholder {
+  color: var(--texto-secundario);
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
+.projetos .divisao-input ::placeholder {
+  color: var(--texto-secundario);
+  font-weight: 600;
+  font-size: 1rem;
+  opacity: 0.4;
+}
+
 .projetos .divisao-projetos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,7 +612,7 @@ body {
   left: 10px;
 }
 
-.projetos .divisao-projetos .projeto .divisao-descricao .nome {
+.projetos .divisao-projetos .projeto .divisao-descricao .nome-projeto {
   font-size: 1.5rem;
   font-weight: bold;
 }

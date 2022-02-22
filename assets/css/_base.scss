@@ -65,7 +65,17 @@ body {
     background: var(--background-primario);
     color: var(--texto-primario);
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
+    overflow-x: hidden;  
+}
+
+::-webkit-scrollbar {
+    width: 7.5px;
+    background: #28282986;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tema-verde);
+    border-radius: 1rem;
 }
 
 .seta-fixada {
@@ -101,6 +111,10 @@ body {
 .icone-menu {
     color: var(--texto-primario);
     font-size: 2rem;
+}
+
+.esconder {
+    display: none;
 }
 
 @media screen and (max-width: 775px) {

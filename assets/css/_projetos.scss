@@ -16,6 +16,33 @@
         }
     }
 
+    .divisao-input {
+        display: grid;
+        place-items: center;
+
+        .input-filtro {
+            background: var(--background-secundario);
+            border: none;
+            border-radius: 0.25rem;
+            color: var(--texto-primario);
+            font-size: 1rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            margin: 0 0 1rem 0;
+            padding: 0 0 0 0.5rem;
+            width: 20rem;
+            height: 2.5rem;
+            outline: none;
+            
+        }
+        ::placeholder {
+            color: var(--texto-secundario);
+            font-weight: 600;
+            font-size: 1rem;
+            opacity: 0.4;
+        }
+    }
+
     .divisao-projetos {
         @include display-flex(true, true, false);
 
@@ -60,7 +87,7 @@
                     left: 10px;
                 }
 
-                .nome {
+                .nome-projeto {
                     font-size: 1.5rem;
                     font-weight: bold;
                 }

@@ -13,6 +13,7 @@
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/linguagens.js" defer></script>
     <script src="assets/js/modo-escuro.js" defer></script>
+    <script src="assets/js/filtro.js" defer></script>
     <title>Felipe Pontin | Portfólio</title>
 </head>
 <body>
@@ -24,7 +25,6 @@
         </div>
         <nav class="menu">
             <ul class="lista">
-                <li class="item"><a class="link" href="#">Início</a></li>
                 <li class="item"><a class="link" href="#habilidades">Habilidades</a></li>
                 <li class="item"><a class="link" href="#projetos">Projetos</a></li>
                 <li class="item"><a class="link" href="#sobre">Sobre</a></li>
@@ -72,7 +72,6 @@
                 <p class="nome">SASS</p>
                 <button class="botao-linguagem"><i class="fas fa-sort-down seta-linguagem"></i></button>
                 <p class="resumo">De super poderes ao seu CSS!</p>
-                
             </div>
             <div class="card javascript">
                 <i class="fab fa-js-square icone-linguagem javascript"></i>
@@ -93,16 +92,19 @@
             <p class="titulo">Projetos</p>
             <p class="subtitulo">Meus projetos</p>
         </div>
-        <div class="divisao-projetos">
+        <div class="divisao-input">
+            <input type="text" name="filtro" class="input-filtro" placeholder="Procure">
+        </div>
+        <div class="divisao-projetos"> 
+            
             <div class="projeto">
                 <div class="imagem background-projeto1"></div>
                 <div class="divisao-descricao">
                     <img src="assets/imgs/Icone-Projeto1.png" class="icone" alt="">
-                    <p class="nome">Idle Game</p>
-                    <p class="descricao">Clique na moeda para ganhar mais moedas.</p>
+                    <p class="nome-projeto">Lista de tarefas</p>
+                    <p class="descricao">Gerencie as suas tarefas do dia a dia</p>
                     <a href="#"><button class="botao-site">Site<i class="fas fa-link icone-botao"></i></button></a>
                     <a href="#"><button class="botao-site">Github<i class="fas fa-external-link-alt icone-botao"></i></button></a>
-
                     <ul class="linguagem-utilizadas">
                         <li class="linguagem html">HTML</li>
                         <li class="linguagem sass">SASS</li>
@@ -114,7 +116,7 @@
                 <div class="imagem background-projeto2"></div>
                 <div class="divisao-descricao">
                     <img src="assets/imgs/Icone-Projeto2.png" class="icone" alt="">
-                    <p class="nome">Gerenciamento de produtos</p>
+                    <p class="nome-projeto">Gerenciamento de produtos</p>
                     <p class="descricao">Gerencie produtos, adicione, edite e delete.</p>
                     <a href="#"><button class="botao-site">Site<i class="fas fa-link icone-botao"></i></button></a>
                     <a href="#"><button class="botao-site">Github<i class="fas fa-external-link-alt icone-botao"></i></button></a>
@@ -129,7 +131,7 @@
                 <div class="imagem background-projeto3"></div>
                 <div class="divisao-descricao">
                     <img src="assets/imgs/Icone-Projeto3.png" class="icone" alt="">
-                    <p class="nome">Landing Page</p>
+                    <p class="nome-projeto">Landing Page</p>
                     <p class="descricao">Landing Page responsiva</p>
                     <a href="#"><button class="botao-site">Site<i class="fas fa-link icone-botao"></i></button></a>
                     <a href="#"><button class="botao-site">Github<i class="fas fa-external-link-alt icone-botao"></i></button></a>
