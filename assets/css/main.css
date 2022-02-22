@@ -684,6 +684,21 @@ body {
   background: #3474a6;
 }
 
+.projetos .divisao-projetos .projeto .divisao-descricao .projeto-desenvolvimento {
+  border-radius: 0.25rem;
+  background: #9c1616;
+  font-weight: bold;
+  font-size: 0.85rem;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  margin: -0.5rem 0 0 0;
+  padding: 0.25rem 0.55rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .sobre {
   background: var(--background-secundario);
   padding: 4.5rem 0 5rem 0;

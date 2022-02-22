@@ -151,6 +151,19 @@
                         background: map-get($linguagens, python);
                     }
                 }
+
+                .projeto-desenvolvimento {
+                    border-radius: 0.25rem;
+                    background: rgb(156, 22, 22);
+                    font-weight: bold;
+                    font-size: 0.85rem;
+                    position: absolute;
+                    top: 0;
+                    right: 5px;
+                    margin: -0.5rem 0 0 0;
+                    padding: 0.25rem 0.55rem;        
+                    width: max-content;
+                }
             }
         }
     }
