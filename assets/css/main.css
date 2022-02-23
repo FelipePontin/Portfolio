@@ -518,7 +518,7 @@ body {
   font-weight: 600;
   margin: 0 0 1rem 0;
   padding: 0 0 0 0.5rem;
-  width: 20rem;
+  width: 18rem;
   height: 2.5rem;
   outline: none;
 }
@@ -870,6 +870,10 @@ body {
     height: 4rem;
     margin: 3rem 0 3rem 0;
   }
+}
+
+.rodape {
+  margin: 0 0.5rem 0 0.5rem;
 }
 
 .rodape .divisao-rodape {
