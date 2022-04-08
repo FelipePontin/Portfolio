@@ -89,6 +89,7 @@ body {
     bottom: 3rem;
     right: 3rem;
     font-size: 1.5rem;
+    z-index: 999;
 
     &:hover {
         background: var(--background-primario);
@@ -119,7 +120,6 @@ body {
 
 @media screen and (max-width: 775px) {
     .seta-fixada {
-        z-index: 998;
         bottom: 1rem;
         right: 1rem;
         padding: 0.5rem 1rem 0.5rem 1rem;

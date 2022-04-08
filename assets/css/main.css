@@ -55,6 +55,7 @@ body {
   bottom: 3rem;
   right: 3rem;
   font-size: 1.5rem;
+  z-index: 999;
 }
 
 .seta-fixada:hover {
@@ -85,7 +86,6 @@ body {
 
 @media screen and (max-width: 775px) {
   .seta-fixada {
-    z-index: 998;
     bottom: 1rem;
     right: 1rem;
     padding: 0.5rem 1rem 0.5rem 1rem;
@@ -566,6 +566,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 2rem 0 0 0;
 }
 
 .projetos .divisao-projetos .projeto {
@@ -595,6 +599,10 @@ body {
 }
 
 .projetos .divisao-projetos .projeto .background-projeto3 {
+  background-color: #ffff0098;
+}
+
+.projetos .divisao-projetos .projeto .background-projeto4 {
   background-color: var(--texto-secundario);
 }
 
@@ -612,7 +620,13 @@ body {
   left: 10px;
 }
 
+.projetos .divisao-projetos .projeto .divisao-descricao .projeto3 {
+  width: 65px;
+  height: 65px;
+}
+
 .projetos .divisao-projetos .projeto .divisao-descricao .nome-projeto {
+  z-index: 2;
   font-size: 1.5rem;
   font-weight: bold;
 }
