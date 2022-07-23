@@ -27,8 +27,10 @@
             padding: 1.5rem 1rem 1rem 1rem;
             text-align: center;
             width: 11rem;
+            cursor: pointer;
             height: auto;
-
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            
             .icone-linguagem {
                 font-size: 6rem;
                 border: none;
@@ -68,6 +70,7 @@
                 max-height: 200px;
             }
         }
+
         .html {
             border: 1px solid map-get($linguagens, html);
             color: map-get($linguagens, html);
