@@ -85,7 +85,7 @@
             top: 8rem;
             left: 7rem;
             width: 10rem;
-            height: 10rem;        
+            height: 9rem;        
             background: #2cb67d;
             border-radius: 50%;
             filter: blur(50px);
@@ -104,9 +104,16 @@
 
 }
 
+@media screen and (max-width: 1000px) {
+    .apresentacao {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 775px) {
     .apresentacao {
-        margin: 7rem 4rem 4rem 4rem;
+        margin: 7rem 0 0 0;
 
         .divisao-texto {
             @include display-flex(true, false, false);

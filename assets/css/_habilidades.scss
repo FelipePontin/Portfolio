@@ -111,6 +111,15 @@
             box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
         }
 
+        .react {
+            border: 1px solid map-get($linguagens, react);
+            color: map-get($linguagens, react);
+        }
+
+        .react:hover {
+            box-shadow: #61dafb28 0px 2px 4px 0px, #61dafb28 0px 2px 16px 0px;
+        }
+
         .python {
             border: 1px solid map-get($linguagens, python);
             color: map-get($linguagens, python);

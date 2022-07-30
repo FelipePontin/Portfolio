@@ -112,6 +112,10 @@ body {
   width: 4rem;
 }
 
+.cabecalho .menu {
+  z-index: 99999;
+}
+
 .cabecalho .menu .lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -157,6 +161,7 @@ body {
 
 @media screen and (max-width: 775px) {
   .botao-menu {
+    z-index: 999999;
     display: block;
   }
   .botao-menu.cliked {
@@ -315,7 +320,7 @@ body {
   top: 8rem;
   left: 7rem;
   width: 10rem;
-  height: 10rem;
+  height: 9rem;
   background: #2cb67d;
   border-radius: 50%;
   -webkit-filter: blur(50px);
@@ -330,9 +335,21 @@ body {
   margin: 2rem 0 -.38rem 0;
 }
 
+@media screen and (max-width: 1000px) {
+  .apresentacao {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 775px) {
   .apresentacao {
-    margin: 7rem 4rem 4rem 4rem;
+    margin: 7rem 0 0 0;
   }
   .apresentacao .divisao-texto {
     display: -webkit-box;
@@ -520,6 +537,16 @@ body {
 .habilidades .divisao-linguagem .javascript:hover {
   -webkit-box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
           box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
+}
+
+.habilidades .divisao-linguagem .react {
+  border: 1px solid #61dafb;
+  color: #61dafb;
+}
+
+.habilidades .divisao-linguagem .react:hover {
+  -webkit-box-shadow: #61dafb28 0px 2px 4px 0px, #61dafb28 0px 2px 16px 0px;
+          box-shadow: #61dafb28 0px 2px 4px 0px, #61dafb28 0px 2px 16px 0px;
 }
 
 .habilidades .divisao-linguagem .python {

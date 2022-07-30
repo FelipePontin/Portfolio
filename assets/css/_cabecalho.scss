@@ -7,6 +7,8 @@
     }
 
     .menu {
+        z-index: 99999;
+
         .lista {
             @include display-flex(false, false, false);
 
@@ -47,6 +49,7 @@
 @media screen and (max-width: 775px) {
 
     .botao-menu {
+        z-index: 999999;
         display: block;
     }
 
