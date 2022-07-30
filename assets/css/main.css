@@ -205,15 +205,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 5rem 0 7.5rem 0;
+  margin: 10rem 0 0 0;
 }
 
 .apresentacao .divisao-texto {
@@ -308,12 +306,28 @@ body {
   background: var(--hover);
 }
 
+.apresentacao .divisao-imagem {
+  position: relative;
+}
+
+.apresentacao .divisao-imagem .efeito-inicio {
+  position: absolute;
+  top: 8rem;
+  left: 7rem;
+  width: 10rem;
+  height: 10rem;
+  background: #2cb67d;
+  border-radius: 50%;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  z-index: 65;
+}
+
 .apresentacao .divisao-imagem .imagem-inicio {
-  width: 90%;
-  height: auto;
-  max-width: 30rem;
-  min-width: 15rem;
-  margin: 2rem 0 0 0;
+  position: relative;
+  z-index: 9999;
+  width: 20rem;
+  margin: 2rem 0 -.38rem 0;
 }
 
 @media screen and (max-width: 775px) {
@@ -428,6 +442,11 @@ body {
   border: none;
 }
 
+.habilidades .divisao-linguagem .card .icone-linguagem:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .habilidades .divisao-linguagem .card .nome {
   font-size: 1.25rem;
   font-weight: bold;
@@ -468,9 +487,19 @@ body {
   color: #e44b22;
 }
 
+.habilidades .divisao-linguagem .html:hover {
+  -webkit-box-shadow: #e44c2228 0px 2px 4px 0px, #e44c2228 0px 2px 16px 0px;
+          box-shadow: #e44c2228 0px 2px 4px 0px, #e44c2228 0px 2px 16px 0px;
+}
+
 .habilidades .divisao-linguagem .css {
   border: 1px solid #2552e8;
   color: #2552e8;
+}
+
+.habilidades .divisao-linguagem .css:hover {
+  -webkit-box-shadow: #2552e828 0px 2px 4px 0px, #2552e828 0px 2px 16px 0px;
+          box-shadow: #2552e828 0px 2px 4px 0px, #2552e828 0px 2px 16px 0px;
 }
 
 .habilidades .divisao-linguagem .sass {
@@ -478,14 +507,29 @@ body {
   color: #cc649b;
 }
 
+.habilidades .divisao-linguagem .sass:hover {
+  -webkit-box-shadow: #cc649b28 0px 2px 4px 0px, #cc649b28 0px 2px 16px 0px;
+          box-shadow: #cc649b28 0px 2px 4px 0px, #cc649b28 0px 2px 16px 0px;
+}
+
 .habilidades .divisao-linguagem .javascript {
   border: 1px solid #f3e31b;
   color: #f3e31b;
 }
 
+.habilidades .divisao-linguagem .javascript:hover {
+  -webkit-box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
+          box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
+}
+
 .habilidades .divisao-linguagem .python {
   border: 1px solid #3474a6;
   color: #3474a6;
+}
+
+.habilidades .divisao-linguagem .python:hover {
+  -webkit-box-shadow: #3474a628 0px 2px 4px 0px, #3474a628 0px 2px 16px 0px;
+          box-shadow: #3474a628 0px 2px 4px 0px, #3474a628 0px 2px 16px 0px;
 }
 
 .projetos {
@@ -591,8 +635,6 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 0.5rem 0.5rem 0 0;
-  background: url(/assets/imgs/Background-Projeto.png);
-  background-size: 200px;
 }
 
 .projetos .divisao-projetos .projeto .background-projeto1 {

@@ -36,6 +36,10 @@
                 border: none;
             }
 
+            .icone-linguagem:hover {
+                box-shadow: none;
+            }
+
             .nome {
                 font-size: 1.25rem;
                 font-weight: bold;
@@ -76,9 +80,17 @@
             color: map-get($linguagens, html);
         }
 
+        .html:hover {
+            box-shadow: #e44c2228 0px 2px 4px 0px, #e44c2228 0px 2px 16px 0px;
+        }
+
         .css {
             border: 1px solid map-get($linguagens, css);
             color: map-get($linguagens, css);
+        }
+
+        .css:hover {
+            box-shadow: #2552e828 0px 2px 4px 0px, #2552e828 0px 2px 16px 0px;
         }
 
         .sass {
@@ -86,14 +98,26 @@
             color: map-get($linguagens, sass);
         }
 
+        .sass:hover {
+            box-shadow: #cc649b28 0px 2px 4px 0px, #cc649b28 0px 2px 16px 0px;
+        }
+
         .javascript {
             border: 1px solid map-get($linguagens, javascript);
             color: map-get($linguagens, javascript);
         }
 
+        .javascript:hover {
+            box-shadow: #f3e31b28 0px 2px 4px 0px, #f3e31b28 0px 2px 16px 0px;
+        }
+
         .python {
             border: 1px solid map-get($linguagens, python);
             color: map-get($linguagens, python);
+        }
+
+        .python:hover {
+            box-shadow: #3474a628 0px 2px 4px 0px, #3474a628 0px 2px 16px 0px;
         }
     }
 }

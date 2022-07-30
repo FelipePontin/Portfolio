@@ -60,8 +60,9 @@
                 height: 150px;
                 object-fit: cover;
                 border-radius: 0.5rem 0.5rem 0 0;
-                background: url(/assets/imgs/Background-Projeto.png);
-                background-size: 200px;
+                // background: url(/assets/imgs/Background-Projeto.png);
+                // background-size: cover;
+                // background-repeat: no-repeat;
             }
 
             .background-projeto1 {   
