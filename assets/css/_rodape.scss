@@ -1,9 +1,9 @@
 .rodape {
-    margin: 0 0.5rem 0 0.5rem;
+    background: var(--background-secundario);
 
     .divisao-rodape {
         @include display-flex(true, false, true);
-        margin: 3.5rem 0 0 0;
+        padding: 2.5rem 0 0 0;
 
         .divisao-logo-linguagem {
             .logo {
@@ -82,7 +82,7 @@
         font-weight: bold;
         font-size: 0.85rem;
         text-align: center;
-        margin: 3.5rem 0 1rem 0;
+        padding: 3.5rem 0 1rem 0;
     }
 }
 

@@ -1,0 +1,128 @@
+.experiencias {
+    background: var(--background-secundario);
+    padding: 4.5rem 0 5rem 0;
+
+    .divisao-texto {
+        text-align: center;
+
+        .titulo {
+            font-weight: bold;
+            font-size: 1.95rem;
+        }
+
+        .subtitulo {
+            color: var(--texto-secundario);
+            margin: -0.5rem 0 0 0;
+        }
+    }
+
+    .divisao_experiencias {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0 0 0;
+
+        .divisao-experiencia {
+            width: max-content;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 1px solid #eeeeee4d;
+            border-radius: 20px;
+            padding: 1.5rem;
+            margin: 1rem;
+
+            .logo-experiencia {
+                width: 8.5rem;
+            }
+
+            .divisao-informacoes {
+                margin: 0 0 0 1rem;
+
+                .nome-experiencia {
+                    width: 17.5rem;
+                    font-weight: 700;
+                    font-size: 16px;
+                    color: #fffffe;
+                }
+
+                .periodo-experiencia {
+                    width: max-content;
+                    padding: 0.25rem 0.5rem;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid rgba(238, 238, 238, 0.3);
+                    border-radius: 4px;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #ffffff;
+                    margin: 0.5rem 0;
+                }
+
+                .funcao-experiencia {
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #94a1b2;
+                }
+            }
+        }
+
+        .unesp {
+            background-image: url(../imgs/BackgroundUnesp.png);
+        }
+
+        .norway {
+            background-image: url(../imgs/BackgroundNorway.png);
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .experiencias {
+
+        .divisao-texto {
+       
+
+            .titulo {
+            
+            }
+
+            .subtitulo {
+         
+            }
+        }
+
+        .divisao_experiencias {
+            
+            .divisao-experiencia {
+                width: 21.5rem;
+                height: 20rem;
+            }
+        }
+
+        .logo-experiencia {
+            margin: 0 auto;
+        }
+
+        .divisao-informacoes {
+            margin: .5rem 0 0 0 !important;
+
+            .nome-experiencia {
+
+            }
+
+            .periodo-experiencia {
+
+            }
+
+            .funcao-experiencia {
+
+            }
+        }
+    }
+}

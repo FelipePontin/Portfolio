@@ -1,5 +1,4 @@
 .sobre {
-    background: var(--background-secundario);
     padding: 4.5rem 0 5rem 0;
 
     .divisao-texto {
@@ -19,7 +18,7 @@
 
     .divisao-sobre {
         margin: 1rem auto 0 auto;
-        background: var(--background-primario);
+        background: var(--background-secundario);
         border: 1px solid var(--tema-verde);
         border-radius: 1rem;
         padding: 3rem 5rem;

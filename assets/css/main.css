@@ -794,8 +794,124 @@ body {
   width: max-content;
 }
 
-.sobre {
+.experiencias {
   background: var(--background-secundario);
+  padding: 4.5rem 0 5rem 0;
+}
+
+.experiencias .divisao-texto {
+  text-align: center;
+}
+
+.experiencias .divisao-texto .titulo {
+  font-weight: bold;
+  font-size: 1.95rem;
+}
+
+.experiencias .divisao-texto .subtitulo {
+  color: var(--texto-secundario);
+  margin: -0.5rem 0 0 0;
+}
+
+.experiencias .divisao_experiencias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem 0 0 0;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #eeeeee4d;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia .logo-experiencia {
+  width: 8.5rem;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia .divisao-informacoes {
+  margin: 0 0 0 1rem;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia .divisao-informacoes .nome-experiencia {
+  width: 17.5rem;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fffffe;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia .divisao-informacoes .periodo-experiencia {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0.25rem 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(238, 238, 238, 0.3);
+  border-radius: 4px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.experiencias .divisao_experiencias .divisao-experiencia .divisao-informacoes .funcao-experiencia {
+  font-weight: 400;
+  font-size: 13px;
+  color: #94a1b2;
+}
+
+.experiencias .divisao_experiencias .unesp {
+  background-image: url(../imgs/BackgroundUnesp.png);
+}
+
+.experiencias .divisao_experiencias .norway {
+  background-image: url(../imgs/BackgroundNorway.png);
+}
+
+@media screen and (max-width: 540px) {
+  .experiencias .divisao_experiencias .divisao-experiencia {
+    width: 21.5rem;
+    height: 20rem;
+  }
+  .experiencias .logo-experiencia {
+    margin: 0 auto;
+  }
+  .experiencias .divisao-informacoes {
+    margin: .5rem 0 0 0 !important;
+  }
+}
+
+.sobre {
   padding: 4.5rem 0 5rem 0;
 }
 
@@ -816,7 +932,7 @@ body {
 
 .sobre .divisao-sobre {
   margin: 1rem auto 0 auto;
-  background: var(--background-primario);
+  background: var(--background-secundario);
   border: 1px solid var(--tema-verde);
   border-radius: 1rem;
   padding: 3rem 5rem;
@@ -968,7 +1084,7 @@ body {
 }
 
 .rodape {
-  margin: 0 0.5rem 0 0.5rem;
+  background: var(--background-secundario);
 }
 
 .rodape .divisao-rodape {
@@ -986,7 +1102,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin: 3.5rem 0 0 0;
+  padding: 2.5rem 0 0 0;
 }
 
 .rodape .divisao-rodape .divisao-logo-linguagem .logo .texto {
@@ -1064,7 +1180,7 @@ body {
   font-weight: bold;
   font-size: 0.85rem;
   text-align: center;
-  margin: 3.5rem 0 1rem 0;
+  padding: 3.5rem 0 1rem 0;
 }
 
 @media screen and (max-width: 775px) {
