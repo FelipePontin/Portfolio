@@ -81,7 +81,7 @@
             }
 
             .background-projeto4 {
-                background-color: var(--texto-secundario);
+                background-color: rgba(156, 22, 22, 0.384);
             }
 
             .divisao-descricao {
@@ -100,6 +100,11 @@
                 .projeto3 {
                     width: 65px;
                     height: 65px;
+                }
+
+                .projeto4 {
+                    width: 65px;
+                    height: auto;
                 }
 
                 .nome-projeto {
@@ -161,6 +166,10 @@
 
                     .javascript {
                         background: map-get($linguagens, javascript-escura);
+                    }
+                    
+                    .react {
+                        background: map-get($linguagens, react);
                     }
 
                     .python {
